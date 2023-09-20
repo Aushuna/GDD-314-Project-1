@@ -20,7 +20,7 @@ public class Fix : MonoBehaviour
         else
         {
             //collision.gameObject.SetActive(false);
-            score.SubtractScore(1);
+            //score.SubtractScore(1);
             Debug.Log("Wrong");
         }
     }
