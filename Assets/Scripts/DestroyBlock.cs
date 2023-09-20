@@ -5,7 +5,7 @@ using UnityEngine;
 public class DestroyBlock : MonoBehaviour
 {
 
-    public GameObject Box;
+    public GameObject Box, Table;
     public Score score;
     public string Tag;
 
@@ -13,12 +13,14 @@ public class DestroyBlock : MonoBehaviour
     {
         if(collision.gameObject.CompareTag(Tag)) {
             collision.gameObject.SetActive(false);
+            Table.gameObject.SetActive(true);
             score.AddScore(1);
             Debug.Log("correct!!");
         }
         else
         {
             //collision.gameObject.SetActive(false);
+            Table.gameObject.SetActive(false);
             score.SubtractScore(1);
             Debug.Log("Wrong");
         }
