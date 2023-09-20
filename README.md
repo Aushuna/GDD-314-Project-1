@@ -1,2 +1,2 @@
-# VR-Paddle-Demo
- Simple paddle toy demo in VR.
+# Project 1 GDD 314
+Toy Box Project
