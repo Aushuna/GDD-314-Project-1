@@ -28,19 +28,19 @@ public class DestroyBlock : MonoBehaviour
             
             //adds to the score counter
                 score.AddScore(1);
-            
+                
             
             //Debug.Log("correct!!");
         }
         else
         {
-            //collision.gameObject.SetActive(false);
+            collision.gameObject.SetActive(false);
 
             //sets spawner to false
-            Table.gameObject.SetActive(false);
+            //Table.gameObject.SetActive(false);
 
             //enables text telling you to fix your error
-            fixText.gameObject.SetActive(true);
+           // fixText.gameObject.SetActive(true);
 
              
             //score.SubtractScore(1);
